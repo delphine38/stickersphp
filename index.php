@@ -49,10 +49,10 @@ $imagespath = "images/";
         <h1 class="text-center m-5">Bienvenue sur Stick et Flock 69</h1>
 
         <?php
+        $images = ('images');
         foreach ($sticks as $stick) : ?>
-            <img src="<?= $imagespath['image'] ?>" alt="">
+            <img src="images/<?= $images ?>" alt="image">
 
-            <?= $stick['images/image'] ?>
             <li>
                 <?= $stick['description'] ?>
             </li>
