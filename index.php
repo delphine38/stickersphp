@@ -47,19 +47,22 @@ $imagespath = "images/";
 <body>
     <header>
         <h1 class="text-center m-5">Bienvenue sur Stick et Flock 69</h1>
+    </header>
 
-        <?php
+    <main>
 
-        foreach ($sticks as $stick) : ?>
-            <div class="card" style="width: 18rem;">
-                <img src=" <?= $imagespath['image'] ?>" alt="">
+        <div class="container">
+            <?php foreach ($sticks as $stick) : ?>
+                <img src=" <?= $stick['image'] ?>" alt="" width="200px" height="200px">
                 <div class="card-body">
                     <p class="card-text">Description : <?= $stick['description'] ?></p>
                 </div>
-            </div>
-        <?php endforeach ?>
+            <?php endforeach ?>
 
-    </header>
+        </div>
+
+
+    </main>
 
 </body>
 
