@@ -20,7 +20,7 @@ $executeIsOk = $pdoState->execute();
 
 //récuperation des résultats
 $sticks = $pdoState->fetchAll();
-var_dump($sticks);
+// var_dump($sticks);
 
 //execute la requete
 // $insertIsOk = $pdoState->execute();
@@ -45,11 +45,12 @@ $imagespath = "images/";
 </head>
 
 <body>
-    <header>
-        <h1 class="text-center m-5">Bienvenue sur Stick et Flock 69</h1>
+    <header class="header">
     </header>
 
     <main>
+        <h1 class="text-center my-5">Stickers et Flocages 69 Vous souhaite la Bienvenue !</h1>
+        <!-- <h1 class="text-center m-5">Bienvenue sur Stick et Flock 69</h1> -->
         <div class="container">
             <div class="p-1 d-flex flex-wrap text-center">
                 <?php foreach ($sticks as $stick) : ?>
@@ -61,6 +62,32 @@ $imagespath = "images/";
             </div>
         </div>
     </main>
+
+    <footer>
+        <h1 class="text-center">Vous avez des questions ou des suggestions 😉 ...</h1>
+        <h6 class="text-center">
+            <?php echo '<a href="https://www.facebook.com/stickflock/" > cliquez ici, Stickers et Flocages 69 </a>'; ?>
+            <!-- <a href="https://www.facebook.com/stickermania69/">cliquez ici, Stickers et Flocages 69</a> -->
+        </h6>
+
+        <p class="text-center">
+            et laissez moi un message, je serais ravie de pouvoir affiner votre demande
+        </p>
+        </template>
+    </footer>
 </body>
 
 </html>
+
+<style>
+    .header {
+        /* background-image: url("../assets/headerimg.jpg"); */
+        background-image: url('<?php echo "images/headerimg2.jpg" ?>');
+        /* background-image: url("../images/headerimg.jpg"); */
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 300px;
+        padding-top: 10px;
+        height: 10px;
+    }
+</style>

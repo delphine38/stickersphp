@@ -1,0 +1,8 @@
+.header {
+    /* background-image: url("../assets/headerimg.jpg"); */
+    background-image: url("../images/headerimg2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+    padding-top: 10px;
+}
