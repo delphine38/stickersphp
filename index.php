@@ -50,20 +50,17 @@ $imagespath = "images/";
     </header>
 
     <main>
-
         <div class="container">
-            <?php foreach ($sticks as $stick) : ?>
-                <img src=" <?= $stick['image'] ?>" alt="" width="200px" height="200px">
-                <div class="card-body">
-                    <p class="card-text">Description : <?= $stick['description'] ?></p>
-                </div>
-            <?php endforeach ?>
-
+            <div class="p-1 d-flex flex-wrap text-center">
+                <?php foreach ($sticks as $stick) : ?>
+                    <div class="card-body">
+                        <img src=" <?= $stick['image'] ?>" alt="" width="200px" height="200px">
+                        <p class="card-text">Description : <?= $stick['description'] ?></p>
+                    </div>
+                <?php endforeach ?>
+            </div>
         </div>
-
-
     </main>
-
 </body>
 
 </html>
