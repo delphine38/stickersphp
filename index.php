@@ -50,7 +50,15 @@ $imagespath = "images/";
 
     <main>
         <h1 class="text-center my-5">Stickers et Flocages 69 Vous souhaite la Bienvenue !</h1>
-        <!-- <h1 class="text-center m-5">Bienvenue sur Stick et Flock 69</h1> -->
+
+        <h2 class="text-center my-5">
+            Chez Stick flock 69, je réalise sur mesure et personnalisé vos stickers et
+            flocages. <br />
+            Pour toutes commandes, envoyer un mail à : alice@protonmail.com
+        </h2>
+
+        <h3 class="text-center m-5">Quelques flocages :</h3>
+
         <div class="container">
             <div class="p-1 d-flex flex-wrap text-center">
                 <?php foreach ($sticks as $stick) : ?>
@@ -61,16 +69,18 @@ $imagespath = "images/";
                 <?php endforeach ?>
             </div>
         </div>
+        <h3 class="text-center m-5">
+            Ceci est un échantillon, ensemble visualisons vos besoins
+        </h3>
     </main>
 
     <footer>
-        <h1 class="text-center">Vous avez des questions ou des suggestions 😉 ...</h1>
-        <h6 class="text-center">
+        <h1 class="text-center m-5">Vous avez des questions ou des suggestions 😉 ...</h1>
+        <h6 class="text-center m-5">
             <?php echo '<a href="https://www.facebook.com/stickflock/" > cliquez ici, Stickers et Flocages 69 </a>'; ?>
-            <!-- <a href="https://www.facebook.com/stickermania69/">cliquez ici, Stickers et Flocages 69</a> -->
         </h6>
 
-        <p class="text-center">
+        <p class="text-center m-5">
             et laissez moi un message, je serais ravie de pouvoir affiner votre demande
         </p>
         </template>
@@ -81,9 +91,7 @@ $imagespath = "images/";
 
 <style>
     .header {
-        /* background-image: url("../assets/headerimg.jpg"); */
         background-image: url('<?php echo "images/headerimg2.jpg" ?>');
-        /* background-image: url("../images/headerimg.jpg"); */
         background-size: cover;
         background-position: center;
         padding-bottom: 300px;
